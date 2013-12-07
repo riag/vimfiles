@@ -26,6 +26,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+language messages en.utf-8 
+
 source $VIMRUNTIME/delmenu.vim  
 source $VIMRUNTIME/menu.vim
 

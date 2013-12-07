@@ -13,8 +13,8 @@ filetype on
 nmap <leader>fb :FufBuffer<cr>
 nmap <leader>ff :FufFile<cr>
 
-set fileencodings=gbk,utf-8
-set encoding=gbk
+set fileencodings=utf-8,gbk
+set encoding=utf-8
 set fileencoding=utf-8
 
 let g:ConqueTerm_CodePage=936
@@ -26,5 +26,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-
+source $VIMRUNTIME/delmenu.vim  
+source $VIMRUNTIME/menu.vim
 

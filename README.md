@@ -15,10 +15,9 @@
 大部分插件都使用默認配置
 
 ### ctrlp
-'''
-nmap <leader>ff :CtrlP <cr>
-nmap <leader>fb :CtrlPBuffer <cr>
-nmap <leader>fm :CtrlPMRU <cr>
 
-'''
+	nmap <leader>ff :CtrlP <cr>
+	nmap <leader>fb :CtrlPBuffer <cr>
+	nmap <leader>fm :CtrlPMRU <cr>
+
 

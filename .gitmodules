@@ -22,3 +22,6 @@
 	path = bundle/vim-golang
 	url = git://github.com/jnwhiteh/vim-golang.git
 	ignore = dirty
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim

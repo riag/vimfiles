@@ -10,8 +10,8 @@ execute pathogen#infect(s:pathogen_path . "{}")
 filetype plugin indent on
 filetype on
 
-nmap <leader>fb :CtrlP <cr>
-nmap <leader>ff :CtrlPBuffer <cr>
+nmap <leader>ff :CtrlP <cr>
+nmap <leader>fb :CtrlPBuffer <cr>
 nmap <leader>fm :CtrlPMRU <cr>
 
 set fileencodings=utf-8,gbk

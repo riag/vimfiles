@@ -32,3 +32,5 @@ language messages en.utf-8
 source $VIMRUNTIME/delmenu.vim  
 source $VIMRUNTIME/menu.vim
 
+set laststatus=2
+set ruler

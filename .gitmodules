@@ -20,13 +20,13 @@
 	ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
+	url = git://github.com/terryma/vim-multiple-cursors.git
 [submodule "bundle/expand-region"]
 	path = bundle/expand-region
-	url = https://github.com/terryma/vim-expand-region.git
+	url = git://github.com/terryma/vim-expand-region.git
 [submodule "bundle/airline"]
 	path = bundle/airline
-	url = https://github.com/bling/vim-airline.git
+	url = git://github.com/bling/vim-airline.git

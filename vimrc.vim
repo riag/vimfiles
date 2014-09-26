@@ -34,3 +34,16 @@ source $VIMRUNTIME/menu.vim
 
 set laststatus=2
 set ruler
+
+"let g:vimproc#dll_path=s:current_path . "/vimproc_win32.dll"
+let g:neocomplcache_enable_at_startup = 1
+"let g:vimshell_enable_debug = 1
+
+if executable('ag')
+	let g:unite_source_grep_command = 'ag'	
+	let g:unite_source_grep_default_opts =
+		  \ '--line-numbers --nocolor --nogroup --hidden --ignore ' .
+		  \  '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
+	let g:unite_source_grep_recursive_opt = ''
+
+endif

@@ -47,3 +47,5 @@ if executable('ag')
 	let g:unite_source_grep_recursive_opt = ''
 
 endif
+
+let g:session_autosave='yes'

@@ -36,3 +36,9 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/neocomplcache.vim"]
+	path = bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim

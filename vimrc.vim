@@ -18,11 +18,6 @@ set fileencodings=utf-8,gbk
 set encoding=utf-8
 set fileencoding=utf-8
 
-let g:ConqueTerm_CodePage=936
-let g:ConqueTerm_ReadUnfocused = 1
-let g:ConqueTerm_InsertOnEnter = 1
-let g:ConqueTerm_CWInsert = 1
-
 syntax enable
 set background=dark
 colorscheme solarized

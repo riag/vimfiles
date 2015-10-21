@@ -49,3 +49,8 @@ if executable('ag')
 endif
 
 let g:session_autosave='yes'
+
+let s:local_vimrc_path=s:current_path . "/local_vimrc.vim"
+if filereadable(s:local_vimrc_path)
+	execute 'source ' . s:local_vimrc_path
+endif

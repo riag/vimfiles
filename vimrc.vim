@@ -34,6 +34,12 @@ set ruler
 let g:neocomplcache_enable_at_startup = 1
 "let g:vimshell_enable_debug = 1
 
+let g:airline_theme='bubblegum'
+"let g:airline_solarized_bg='light'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' ' 
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
 if executable('ag')
 	let g:unite_source_grep_command = 'ag'	
 	let g:unite_source_grep_default_opts =

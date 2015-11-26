@@ -2,22 +2,52 @@
 ## 用到的插件
  * [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
  * [vim-airline](https://github.com/bling/vim-airline)
- * [conque-shell](https://github.com/vim-scripts/Conque-Shell)
  * [ctrlp](https://github.com/kien/ctrlp.vim)
  * [vim-expand-region](https://github.com/terryma/vim-expand-region)
  * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
  * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
  * [vim-golang](https://github.com/jnwhiteh/vim-golang)
  * [vim-pathogen](https://github.com/tpope/vim-pathogen)
+ * [vim-session](https://github.com/xolox/vim-session)
+ * [neocomplcache.vim](https://github.com/Shougo/neocomplcache.vim)
+ * [unite.vim](https://github.com/Shougo/unite.vim)
 
 
 ## 配置
 大部分插件都使用默認配置,下面列出的是我定制的配置
+如果你想修改配置，请复制 local_vimrc.vim.tpl , 改名为 local_vimrc.vim , 在这个文件里配置
 
 ### ctrlp
+```
+nmap <leader>ff :CtrlP <cr>
+nmap <leader>fb :CtrlPBuffer <cr>
+nmap <leader>fm :CtrlPMRU <cr>
+```
+ctrlp 默认缓存数据加快打开速度，所以在查找文件时就存在一点问题，有些新建的文件会找不到，这时可以在 ctrlp 里按 `F5` 更新数据 
 
-	nmap <leader>ff :CtrlP <cr>
-	nmap <leader>fb :CtrlPBuffer <cr>
-	nmap <leader>fm :CtrlPMRU <cr>
+### vim-airline
+安装了 `powerline font` 字体后，才能使用下面的配置
+```
+let g:airline_powerline_fonts = 1
+```
+gvim 还需要设置字体，建议使用 `Ubuntu Mono derivative` 字体, 字体可在这里下载 https://github.com/powerline/fonts
+windows下安装字体很简单，双击ttf字体文件就可以了，linux下安装字体见这里 https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation
+```
+if has('gui')
+	if has('win32')
+		set guifont=Ubuntu_Mono_derivative_Powerlin:h12:cANSI
+	else
+		set guifont=Ubuntu\ Mono\ derivative\ Powerline:12
+	endif
+endif
+```
+cygwin 下使用 `consolas-font-for-powerline` 字体, 在这里下载 https://github.com/runsisi/consolas-font-for-powerline
+mintty 设置使用该字体就可以了
 
-
+### vim-session 
+可以使用下面的配置修改session默认保存的路径
+```
+let g:session_directory="G:/devel/vim-sessions"
+```
+vim虽然没有project的概念，但有session，可以把一个sessioin当作project来使用
+使用 `SaveSession` 命令保存session，使用 `OpenSession` 命令加载session, 只要加载了session，vim关闭时会自动保存g

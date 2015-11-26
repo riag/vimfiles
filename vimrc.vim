@@ -17,6 +17,7 @@ nmap <leader>fm :CtrlPMRU <cr>
 set fileencodings=utf-8,gbk
 set encoding=utf-8
 set fileencoding=utf-8
+set ff=unix
 
 syntax enable
 set background=dark
@@ -38,7 +39,10 @@ let g:airline_theme='bubblegum'
 "let g:airline_solarized_bg='light'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' ' 
-let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+let g:airline#extensions#tabline#show_tab_nr = 1
 
 if executable('ag')
 	let g:unite_source_grep_command = 'ag'	
@@ -50,6 +54,7 @@ if executable('ag')
 endif
 
 let g:session_autosave='yes'
+let g:session_autoload='no'
 
 let s:local_vimrc_path=s:current_path . "/local_vimrc.vim"
 if filereadable(s:local_vimrc_path)

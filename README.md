@@ -50,4 +50,23 @@ mintty 设置使用该字体就可以了
 let g:session_directory="G:/devel/vim-sessions"
 ```
 vim虽然没有project的概念，但有session，可以把一个sessioin当作project来使用
-使用 `SaveSession` 命令保存session，使用 `OpenSession` 命令加载session, 只要加载了session，vim关闭时会自动保存g
+使用 `SaveSession` 命令保存session，使用 `OpenSession` 命令加载session, 只要加载了session，vim关闭时会自动保存
+
+### unite.vim
+部分功能依赖 vimproc.vim 插件，需要编译一个动态库文件，具体的编译可以看这里的说明 https://github.com/Shougo/vimproc.vim
+如果使用的是windows系统，可以直接下载二进制文件 https://github.com/Shougo/vimproc.vim/releases
+把动态库文件复制到 lib 目录下，也可以直接修改 `g:vimproc#dll_path` 指向动态库文件
+
+`Unite grep` 命令默认使用 `grep` 来搜索文件，建议使用 `ag` 替换原来的 `grep`，具体的编译看这里 https://github.com/ggreer/the_silver_searcher 
+把ag可执行文件路径加入到windows的环境变量PATH就可以了
+
+还有一些有用的命令
+```
+Unite command  查看vim的Ex命令
+Unite function 查看vim的内部函数
+Unite mapping  查看vim键盘映射配置
+```
+
+### scratch.vim
+使用默认配置，在普通模式(normal mode)或可视模式(virtual mode)下使用 `gS` 快捷键打开 scratch
+

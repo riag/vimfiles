@@ -31,6 +31,11 @@ source $VIMRUNTIME/menu.vim
 set laststatus=2
 set ruler
 
+"  解决 vim-multiple-cursors 在gvim下不能正常工作的问题
+if has("gui")
+	set selection=inclusive
+endif
+
 " vimproc.vim
 " Global options definition. "{{{
 " Set the default of g:vimproc_dll_path by judging OS "{{{

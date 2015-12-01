@@ -58,7 +58,7 @@ vim虽然没有project的概念，但有session，可以把一个sessioin当作p
 把动态库文件复制到 lib 目录下，也可以直接修改 `g:vimproc#dll_path` 指向动态库文件
 
 `Unite grep` 命令默认使用 `grep` 来搜索文件，建议使用 `ag` 替换原来的 `grep`，具体的编译看这里 https://github.com/ggreer/the_silver_searcher 
-把ag可执行文件路径加入到windows的环境变量PATH就可以了
+也可以在这里下载到 `ag` windows 版本 http://blog.kowalczyk.info/software/the-silver-searcher-for-windows.html， 把ag可执行文件路径加入到windows的环境变量PATH就可以了
 
 还有一些有用的命令
 ```
@@ -81,4 +81,16 @@ nmap <leader>fg :Unite grep <cr>
 <leader> cc : 注释选中的文字
 <leader> cu : 取消注释 
 <leader> c<space>: 注释/取消注释选中的文字
+```
+
+### vim-easymotion
+使用默认配置。
+```
+<leader><leader> f : 向前找某个字符 
+<leader><leader> F : 向后找某个字符 
+<leader><leader> s : 向前或向后找某个字符
+<leader><leader> j : 向前跳到某一行
+<leader><leader> k : 向后跳到某一行
+<leader><leader> n : 向前跳到最后查找结果
+<leader><leader> N : 向后跳到最后查找结果
 ```

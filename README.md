@@ -67,6 +67,11 @@ Unite function 查看vim的内部函数
 Unite mapping  查看vim键盘映射配置
 ```
 
+增加自定义配置
+```
+nmap <leader>fg :Unite grep <cr>
+```
+
 ### scratch.vim
 使用默认配置，在普通模式(normal mode)或可视模式(virtual mode)下使用 `gS` 快捷键打开 scratch
 

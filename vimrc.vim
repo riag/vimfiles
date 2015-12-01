@@ -83,6 +83,8 @@ call unite#custom#profile('source/grep', 'context', {
 		\   'no_quit' : 1,
 		\ })
 
+nmap <leader>fg :Unite grep 
+
 if executable('ag')
 	let g:unite_source_grep_command = 'ag'	
 	let g:unite_source_grep_default_opts =

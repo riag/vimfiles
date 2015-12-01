@@ -94,3 +94,18 @@ nmap <leader>fg :Unite grep <cr>
 <leader><leader> n : 向前跳到最后查找结果
 <leader><leader> N : 向后跳到最后查找结果
 ```
+
+### vim-expand-region
+使用默认配置。 
+```
++ 增加选中范围
+_ 减少选中范围
+```
+
+### vim-multiple-cursors
+使用默认配置
+```
+Ctrl-n : 普通模式下,进入可视模式并选中光标下的单词; 可视模式下，择下一个相同的单词 
+Ctrl-p : 往回选一个相同的单词
+Ctrl-x : 跳过下一个相同单词
+```

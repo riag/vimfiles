@@ -70,3 +70,10 @@ Unite mapping  查看vim键盘映射配置
 ### scratch.vim
 使用默认配置，在普通模式(normal mode)或可视模式(virtual mode)下使用 `gS` 快捷键打开 scratch
 
+### NERDCommenter 
+使用默认配置。
+```
+<leader> cc : 注释选中的文字
+<leader> cu : 取消注释 
+<leader> c<space>: 注释/取消注释选中的文字
+```

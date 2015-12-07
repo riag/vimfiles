@@ -106,7 +106,7 @@ let g:scratch_autohide = 1
 
 
 
-let s:local_vimrc_path=s:current_path . "/local_vimrc.vim"
+let s:local_vimrc_path=s:current_path . "/vimrc.vim.local"
 if filereadable(s:local_vimrc_path)
 	execute 'source ' . s:local_vimrc_path
 endif

@@ -59,7 +59,12 @@ else
 endif
 "}}}
 
-let g:vimproc#dll_path=s:current_path . "/lib/" . s:vimproc_dll_basename
+let s:vimpro_dll_path=s:current_path . "/lib/" . s:vimproc_dll_basename
+" 只有文件存在才设置 g:vimproc#dll_path
+if executable(s:vimpro_dll_path)
+	let g:vimproc#dll_path=s:vimpro_dll_path
+endif
+
 
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
